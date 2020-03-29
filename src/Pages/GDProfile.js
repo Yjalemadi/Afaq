@@ -114,34 +114,50 @@ export default class GDProfile extends React.Component {
             </Row>
             <Row type="flex" align="middle" className="headingsRow">
               <Col offset={1} span={11}>
-                <a className="aboutForms">Resume</a>
+                <a href="/" className="aboutForms">
+                  Resume
+                </a>
               </Col>
               <Col span={11}>
-                <a className="aboutForms">Rotation 1 Evaluation Form</a>
+                <a href="/" className="aboutForms">
+                  Rotation 1 Evaluation Form
+                </a>
               </Col>
             </Row>
             <Row type="flex" align="middle" className="headingsRow">
               <Col offset={1} span={11}>
-                <a className="aboutForms">Familiarization Plan</a>
+                <a href="/" className="aboutForms">
+                  Familiarization Plan
+                </a>
               </Col>
               <Col span={11}>
-                <a className="aboutForms">Rotation 2 Evaluation Form</a>
+                <a href="/" className="aboutForms">
+                  Rotation 2 Evaluation Form
+                </a>
               </Col>
             </Row>
             <Row type="flex" align="middle" className="headingsRow">
               <Col offset={1} span={11}>
-                <a className="aboutForms">Rotation Plan</a>
+                <a href="/" className="aboutForms">
+                  Rotation Plan
+                </a>
               </Col>
               <Col span={11}>
-                <a className="aboutForms">Rotation 3 Evaluation Form</a>
+                <a href="/" className="aboutForms">
+                  Rotation 3 Evaluation Form
+                </a>
               </Col>
             </Row>
             <Row type="flex" align="middle" className="headingsRow">
               <Col offset={1} span={11}>
-                <a className="aboutForms">6 Months Presentation</a>
+                <a href="/" className="aboutForms">
+                  6 Months Presentation
+                </a>
               </Col>
               <Col span={11}>
-                <a className="aboutForms">Rotation 4 Evaluation Form</a>
+                <a href="/" className="aboutForms">
+                  Rotation 4 Evaluation Form
+                </a>
               </Col>
             </Row>
           </Sider>

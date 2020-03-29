@@ -7,6 +7,7 @@ import Homepage from "./Homepage";
 import PMHomepage from "./Pages/PMHomepage";
 import GDProfile from "./Pages/GDProfile";
 import GDHomepage from "./Pages/GDHomepage";
+import RotationPlanner from "./Pages/RotationPlanner";
 import { Layout } from "antd";
 const { Sider, Content } = Layout;
 
@@ -19,6 +20,9 @@ function App() {
           <Content>
             <Router>
               <Switch>
+                <Route path="/planner">
+                  <RotationPlanner />
+                </Route>
                 <Route path="/pmpage">
                   <PMHomepage />
                 </Route>

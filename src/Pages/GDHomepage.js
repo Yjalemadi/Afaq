@@ -1,6 +1,6 @@
 import React from "react";
 //import AfaqTimeline from "../../components/AfaqTimeline";
-import { Layout, Row, Col, Steps } from "antd";
+import { Row, Col, Steps } from "antd";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCheckCircle,
@@ -117,7 +117,6 @@ export default class GDHomepage extends React.Component {
     this.setState({ current });
   }
   render() {
-    const { Content } = Layout;
     return (
       <div>
         <Row type="flex" align="bottom" className="headerDiv">
@@ -154,7 +153,7 @@ export default class GDHomepage extends React.Component {
           <Row className="topRow" style>
             <Col span={24}>
               <div className="afaqCard">
-                <div className="afaqHeading">Timeline</div>
+                {/* <div className="afaqHeading">Timeline</div>
                 <img
                   id="locationIcon"
                   src="https://icon-library.net/images/vector-location-icon/vector-location-icon-17.jpg"
@@ -162,8 +161,8 @@ export default class GDHomepage extends React.Component {
                   alt="Today"
                 />
                 <div id="timeline" style={{ display: "flex", maxWidth: 900 }}>
-                  {/* <AfaqTimeline /> */}
-                </div>
+                  <AfaqTimeline />
+                </div> */}
               </div>
             </Col>
           </Row>

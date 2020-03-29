@@ -19,6 +19,9 @@ class Homepage extends Component {
           <li>
             <Link to="/gdprofile">GD Profile</Link>
           </li>
+          <li>
+            <Link to="/planner">Rotation Planner</Link>
+          </li>
         </ul>
       </nav>
     );
