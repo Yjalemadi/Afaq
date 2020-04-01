@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "antd/dist/antd.css";
 import "./App.scss";
+import Navigation from "./Navigation";
 import Homepage from "./Homepage";
 import PMHomepage from "./Pages/PMHomepage";
 import GDProfile from "./Pages/GDProfile";
@@ -15,10 +16,12 @@ function App() {
   return (
     <div>
       <Layout>
-        <Sider className="layoutSidebar"></Sider>
-        <Layout>
-          <Content>
-            <Router>
+        <Router>
+          <Sider className="layoutSidebar">
+            <Navigation />
+          </Sider>
+          <Layout>
+            <Content>
               <Switch>
                 <Route path="/planner">
                   <RotationPlanner />
@@ -36,9 +39,9 @@ function App() {
                   <Homepage />
                 </Route>
               </Switch>
-            </Router>
-          </Content>
-        </Layout>
+            </Content>
+          </Layout>
+        </Router>
       </Layout>
     </div>
   );

@@ -17,6 +17,9 @@ $headingSize: 1.35rem;
 $paragraphSize: 1rem;
 $miniText: 0.8rem;
 
+//misc
+$colorTransition: all 0.2s !important;
+
 //shared styling
 
 .layoutSidebar {
@@ -67,6 +70,37 @@ $miniText: 0.8rem;
   margin-bottom: 8px;
   font-weight: 500;
   line-height: 1.2;
+}
+
+//navigation
+.ant-layout-sider {
+  background-color: $burgundy;
+  color: white;
+}
+
+.navigationWrapper {
+  font-size: 24px;
+  height: 100%;
+  .iconDiv {
+    width: $navigationWidth;
+    height: $navigationWidth;
+    cursor: pointer;
+  }
+  .icon {
+    height: 48px;
+    width: 48px;
+    transition: all 0.1s !important;
+  }
+  .icon:hover {
+    background-color: white;
+    color: $burgundy;
+    border-radius: 50%;
+    transition: $colorTransition;
+  }
+  a {
+    color: inherit;
+    transition: unset;
+  }
 }
 
 //GDHomepage
