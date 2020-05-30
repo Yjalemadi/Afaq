@@ -14,6 +14,9 @@ class Homepage extends Component {
             <Link to="/pmpage">PM Homepage</Link>
           </li>
           <li>
+            <Link to="/slpage">SL Homepage</Link>
+          </li>
+          <li>
             <Link to="/gdpage">GD Homepage</Link>
           </li>
           <li>
@@ -21,6 +24,9 @@ class Homepage extends Component {
           </li>
           <li>
             <Link to="/planner">Rotation Planner</Link>
+          </li>
+          <li>
+            <Link to="/gdarchives">GD Archives</Link>
           </li>
         </ul>
       </nav>

@@ -9,6 +9,8 @@ import PMHomepage from "./Pages/PMHomepage";
 import GDProfile from "./Pages/GDProfile";
 import GDHomepage from "./Pages/GDHomepage";
 import RotationPlanner from "./Pages/RotationPlanner";
+import SLPage from "./Pages/SLPage";
+import GDArchives from "./Pages/Archives/GDArchive";
 import { Layout } from "antd";
 const { Sider, Content } = Layout;
 
@@ -29,11 +31,17 @@ function App() {
                 <Route path="/pmpage">
                   <PMHomepage />
                 </Route>
+                <Route path="/slpage">
+                  <SLPage />
+                </Route>
                 <Route path="/gdpage">
                   <GDHomepage />
                 </Route>
                 <Route path="/gdprofile">
                   <GDProfile />
+                </Route>
+                <Route path="/gdarchives">
+                  <GDArchives />
                 </Route>
                 <Route path="/">
                   <Homepage />

@@ -20,8 +20,6 @@ $miniText: 0.8rem;
 //misc
 $colorTransition: all 0.2s !important;
 
-//shared styling
-
 .layoutSidebar {
   max-width: $navigationWidth !important;
   min-width: $navigationWidth !important;
@@ -41,6 +39,18 @@ $colorTransition: all 0.2s !important;
 .contentWarpper {
   background-color: $lightGrey;
   padding: 24px;
+  $height: 100vh - $headerHeight !important;
+  height: $height;
+  min-height: $height;
+  max-height: $height;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.formWapper {
+  background-color: white;
+  padding: 0 24px;
+  padding-bottom: 24px;
   $height: 100vh - $headerHeight !important;
   height: $height;
   min-height: $height;
@@ -301,4 +311,84 @@ $colorTransition: all 0.2s !important;
 
 .ant-modal {
   color: #323232;
+}
+
+//rotation Planner
+.plannerWapper {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  .sectionsWrapper {
+    border-bottom: 1px $lightGrey solid;
+    .sectionHeader {
+      border-top: 1px $lightGrey solid;
+      .asterisk {
+        font-size: $paragraphSize;
+        color: $darkGrey;
+      }
+    }
+    .planner {
+      width: 100%;
+      border: 1px $black solid;
+      border-left-width: 8px;
+      border-radius: 8px;
+      .header {
+        font-size: $paragraphSize;
+        font-weight: 500;
+      }
+      .dateRange {
+        font-size: $paragraphSize;
+        color: $darkGrey;
+        font-weight: 400;
+      }
+      .field {
+        font-size: $paragraphSize;
+        width: 100px;
+      }
+      .actionRow {
+        border-top: 1px $lightGrey solid;
+      }
+      .rotationActions {
+        padding: 4px 8px;
+      }
+    }
+  }
+}
+
+//GDArchive
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0);
+}
+.popup_inner {
+  position: absolute;
+  left: 65%;
+  right: 7%;
+  top: 12%;
+  bottom: 40%;
+  margin: auto;
+  padding: 2%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px gray;
+  background: white;
+}
+
+.apply {
+  background: #791049;
+  border-color: #791049;
+  margin-top: 25px;
+  float: right;
+}
+
+.cancel {
+  border: 0;
+  margin-top: 25px;
+  float: right;
 }
